@@ -9,7 +9,7 @@ int main() {
     num = m ^ n;
     while (num) {
         ans++;
-        num &= (num - 1);
+        num &= num - 1;
     }
     printf("%d\n", ans);
     return 0;
