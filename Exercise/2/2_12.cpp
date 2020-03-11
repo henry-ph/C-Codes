@@ -3,6 +3,10 @@
 int main() {
     int n;
     scanf("%d", &n);
+    if (n == 1) {
+        printf("*\n");
+        return 0;
+    }
     for (int i = 1; i <= n; ++i)
         putchar('*');
     putchar('\n');
@@ -18,4 +22,3 @@ int main() {
     putchar('\n');
     return 0;
 }
-//Wrong at point 0.

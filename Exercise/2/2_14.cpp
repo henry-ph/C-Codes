@@ -5,6 +5,10 @@ int main() {
     int n;
     char s;
     cin >> s >> n;
+    if (n == 1) {
+        cout << s << endl;
+        return 0;
+    }
     for (int i = 1; i <= n - 1; ++i)
         cout << ' ';
     cout << s << endl;
@@ -31,5 +35,3 @@ int main() {
     cout << s << endl;
     return 0;
 }
-
-//Wrong at point 4.
