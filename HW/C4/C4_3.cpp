@@ -42,7 +42,10 @@ void Equation:: solve() {
         double x1, x2;
         x1 = (-b - sqrt(delta)) / (2 * a);
         x2 = (-b + sqrt(delta)) / (2 * a);
-        cout << fixed << setprecision(2) << x1 << ' ' << x2 << endl;
+        if (a > 0) 
+            cout << fixed << setprecision(2) << x1 << ' ' << x2 << endl;
+        else 
+            cout << fixed << setprecision(2) << x2 << ' ' << x1 << endl;
         return;
     }
     else if (!delta) {
