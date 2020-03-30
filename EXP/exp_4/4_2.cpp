@@ -27,10 +27,10 @@ public:
         cout << "Using RAM constructor now." << endl;
     }
     RAM(): ram(0) {
-        cout << "Using RAM default construtor now." << endl;
+        cout << "Using RAM default constructor now." << endl;
     }
     RAM(const RAM &p): ram(p.ram) {
-        cout << "Using RAM copy construtor now." << endl;
+        cout << "Using RAM copy constructor now." << endl;
     }
     ~RAM() {
         cout << "Using RAM destructor now." << endl;
@@ -98,10 +98,8 @@ int main() {
     CPU CPUObject(P6, 300, 2.8);
     RAM RAMObject(1);
     CDROM CDROMObject(2);
-    cout << "Declaring object Computer_1 -->" << endl;
-    Computer Computer_1;
-    cout << "Declaring object Computer_2 -->" << endl;
     Computer Computer_2(CPUObject, RAMObject, CDROMObject);
+    Computer &Computer_3 = Computer_2;
     Computer_2.showCPUFre();
     cout << "Over!" << endl;
     return 0;

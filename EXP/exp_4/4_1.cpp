@@ -9,6 +9,9 @@ public:
         voltage = v;
         cout << "A CPU has been constructed!" << endl;
     }
+    CPU(const CPU& p): rank(p.rank), frequency(p.frequency), voltage(p.voltage) {
+        cout << "CPU copy" << endl;
+    }
     ~CPU() { cout << "A CPU has been destructed!" << endl; }
     CPU_Rank GetRank() const { return rank; }
     int GetFrequency() const { return frequency; }
@@ -26,7 +29,6 @@ private:
 int main()
 {
     CPU a(P6, 300, 2.8);
-    a.Run();
-    a.Stop();
+    CPU &b = a;
     return 0;
 }
