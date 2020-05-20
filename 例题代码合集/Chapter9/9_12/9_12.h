@@ -2,7 +2,7 @@
 #ifndef HEADER_9_12_H
 #define HEADER_9_12_H
 
-//¸¨Öúº¯Êý£º½»»»xºÍyµÄÖµ
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½yï¿½ï¿½Öµ
 template <class T>
 void mySwap(T &x, T &y) {
 	T temp = x;
@@ -10,15 +10,15 @@ void mySwap(T &x, T &y) {
 	y = temp;
 }
 
-//ÓÃÑ¡Ôñ·¨¶ÔÊý×éaµÄn¸öÔªËØ½øÐÐÅÅÐò
+//ï¿½ï¿½Ñ¡ï¿½ñ·¨¶ï¿½ï¿½ï¿½ï¿½ï¿½aï¿½ï¿½nï¿½ï¿½Ôªï¿½Ø½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 template <class T>
 void selectionSort(T a[], int n) {
 	for (int i = 0; i < n - 1; i++) {
-		int leastIndex = i;	//×îÐ¡ÔªËØÖ®ÏÂ±ê³õÖµÉèÎªi
-		for (int j = i + 1; j < n; j++)	//ÔÚÔªËØa[i + 1]..a[n - 1]ÖÐÖð¸ö±È½ÏÏÔ³ö×îÐ¡Öµ
-			if (a[j] < a[leastIndex])	//smallIndexÊ¼ÖÕ¼ÇÂ¼µ±Ç°ÕÒµ½µÄ×îÐ¡ÖµµÄÏÂ±ê
+		int leastIndex = i;	//ï¿½ï¿½Ð¡Ôªï¿½ï¿½Ö®ï¿½Â±ï¿½ï¿½Öµï¿½ï¿½Îªi
+		for (int j = i + 1; j < n; j++)	//ï¿½ï¿½Ôªï¿½ï¿½a[i + 1]..a[n - 1]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½Ð¡Öµ
+			if (a[j] < a[leastIndex])	//smallIndexÊ¼ï¿½Õ¼ï¿½Â¼ï¿½ï¿½Ç°ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Öµï¿½ï¿½ï¿½Â±ï¿½
 				leastIndex = j;
-		mySwap(a[i], a[leastIndex	]);	//½«ÕâÒ»ÌËÕÒµ½µÄ×îÐ¡ÔªËØÓëa[i]½»»»
+		mySwap(a[i], a[leastIndex]);	//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Ôªï¿½ï¿½ï¿½ï¿½a[i]ï¿½ï¿½ï¿½ï¿½
 	}
 }
 #endif	//HEADER_9_12_H
